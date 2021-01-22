@@ -26,7 +26,7 @@ class Density extends Component{
 
     render() {
         return (
-            <div id="density">
+            <div className=".chart">
                 <Bar data={this.state.density} options={{ title:{ display: true, text: "Density" , fontSize:25,
                     fontColor: "black", responsive: true }, legend:{ display:true, position: 'bottom' } }} />
             </div>

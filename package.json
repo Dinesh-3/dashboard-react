@@ -1,23 +1,17 @@
 {
-  "name": "reactcharts",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "axios": "^0.21.1",
-    "chart.js": "^2.6.0",
-    "lodash": "^4.17.20",
-    "react": "^15.6.1",
-    "react-chartjs-2": "^2.1.0",
-    "react-dom": "^15.6.1",
-    "react-router-dom": "^5.2.0"
-  },
-  "devDependencies": {
-    "react-scripts": "1.0.7"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "name": "react_dashboard_heroku",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
   }
-}
+  
