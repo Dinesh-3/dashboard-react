@@ -21,7 +21,6 @@ a {
 }
 
 .header {
-    padding-top: 20px;
     display: flex;
     justify-content: flex-end;
 }
@@ -31,9 +30,10 @@ a {
 }
 
 canvas {
-    margin: 25px ;
-    width: 1250px !important;
-    /* height: 800px !important; */
+    margin: 10px 30px ;
+    padding: 10px 30px;
+    width: 90% !important;
+    height: 50% !important;
     border: 3px solid black;
 }
 .container {
@@ -46,6 +46,7 @@ canvas {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .scroll {
@@ -61,12 +62,17 @@ canvas {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.scroll:active {
+    height: 55px;
 }
 
 .scroll:hover {
-    height: 55px;
+    color: white;
 }
+
 .noselect {
     -webkit-touch-callout: none;
     /* iOS Safari */

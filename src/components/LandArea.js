@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import fetchData from "../services/fetchData"
-import { Bar, Line } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 class ChartData extends Component{
     constructor() {
         super()
         this.state = {
-            population: {},
-            density: {},
             landArea: {}
         }
     }
@@ -20,8 +18,6 @@ class ChartData extends Component{
         fetchData().then(
             data => {
                 this.setState({
-                    population: data.populationChart,
-                    density: data.densityChart,
                     landArea: data.landAreaChart
                 })
             }
@@ -30,21 +26,11 @@ class ChartData extends Component{
 
     render() {
         return (
-            <div className="chart">
-            <div id="population">
-                <Line data={this.state.population} options={{ title:{ display: true, text: "Population" , fontSize:25,
-                    fontColor: "black",responsive: true }, legend:{ display:true, position: 'bottom' } }} />
-            </div>
-            <div id="density">
-                <Bar data={this.state.density} options={{ title:{ display: true, text: "Density" , fontSize:25,
-                    fontColor: "black", responsive: true }, legend:{ display:true, position: 'bottom' } }} />
-            </div>
-            <div id="landArea">
+            <div className=".chart">
                 <Line data={this.state.landArea} options={{ title:{ display: true, text: "Land Area" ,
                     fontSize:25, fontColor: "black", responsive: true }, legend:{ display:true,
                     position: 'bottom' } }} />
             </div>
-</div>
         );
     }
 }

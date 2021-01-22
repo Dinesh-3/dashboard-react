@@ -8,7 +8,8 @@
     "lodash": "^4.17.20",
     "react": "^15.6.1",
     "react-chartjs-2": "^2.1.0",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"
